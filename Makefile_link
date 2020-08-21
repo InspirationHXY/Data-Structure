@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-Wall -g
+INCLUDE=-I/home/huxinyu/DataStructure/
+LIB=
+OUTPUT_OPT=-o $@
+PROG=
+OBJ=List_linked.o
+
+all: ${OBJ} ${PROG}
+
+%.o: %.c
+	${CC} ${CFLAGS} -c $< ${OUTPUT_OPT} ${INCLUDE}
+
+.PHONY: clean
+clean:
+	rm -f ${OBJ}
+	rm -f ${PROG}

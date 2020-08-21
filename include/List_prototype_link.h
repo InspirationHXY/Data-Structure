@@ -114,7 +114,7 @@ Status ListInsert(LinkList *Lp, int i, ElemType e);
 
 /*
  * Deleting the i_the elem in the linklist with head node
- * and save it in q
+ * and save it at dest
  */
-Status ListDelete(LinkList *Lp, int i, Link *q);
+Status ListDelete(LinkList *Lp, int i, Link *dest);
 #endif
